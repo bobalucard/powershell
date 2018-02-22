@@ -1,8 +1,8 @@
 ﻿# Converts all web applications from HTTPS to HTTP
 
-$web = Read-Host -Prompt "Site URL" -AsSecureString
-$app = Read-Host -Prompt "App name" -AsSecureString
-$appAcc = Read-Host -Prompt "App Account (DOMAIN\Username)" -AsSecureString
+$web = Read-Host -Prompt "Site URL"
+$app = Read-Host -Prompt "App name"
+$appAcc = Read-Host -Prompt "App Account (DOMAIN\Username)"
 $allDB = ((Get-SPWebApplication $app).ContentDatabases).Name
 $allDB | Dismount-SPContentDatabase
 
