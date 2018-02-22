@@ -21,7 +21,7 @@ $usersRead = @(
     @{ name = "NT AUTHORITY\LOCAL SERVICE"
        account = "NT AUTHORITY\LOCAL SERVICE"}, 
     @{ name = "Search Crawling Account"
-       account = Read-Host -Prompt "Search Crawling Account (DOMAIN\Username)" -AsSecureString },
+       account = Read-Host -Prompt "Search Crawling Account (DOMAIN\Username)" },
     @{ name = "Super Reader (Object Cache)"
        account = Read-Host -Prompt "Super Reader Account (DOMAIN\Username)" }
     )
