@@ -22,4 +22,4 @@ Set-SPServiceApplicationSecurity $mmsId -ObjectSecurity $security
 ## Give permission for the remote farm to the Search Service Application
 $security = Get-SPServiceApplicationSecurity $ssaId
 Grant-SPObjectSecurity -Identity $security -Principal $principal -Rights "Full Control"
-Set-SPServiceApplicationSecurity $mmsId -ObjectSecurity $security
+Set-SPServiceApplicationSecurity $ssaId -ObjectSecurity $security
